@@ -13,7 +13,7 @@
         
         body {
             font-family: 'Avenir', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: linear-gradient(135deg, #f8f9ff 0%, #e8ebff 100%);
+            background: linear-gradient(135deg, #5A52FF 0%, #FF6C95 100%);
             min-height: 100vh;
             padding: 20px;
             position: relative;
@@ -26,7 +26,7 @@
             right: -50%;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle, rgba(90, 82, 255, 0.05) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
             pointer-events: none;
             z-index: 0;
         }
@@ -37,7 +37,7 @@
             background: white;
             border-radius: 20px;
             padding: 50px;
-            box-shadow: 0 20px 60px rgba(90, 82, 255, 0.08);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
             position: relative;
             z-index: 1;
         }
@@ -145,7 +145,7 @@
         }
         
         .mode-button:nth-child(3)::before {
-            background: linear-gradient(135deg, rgba(255, 108, 149, 0.08) 0%, rgba(255, 108, 149, 0.15) 100%);
+            background: linear-gradient(135deg, rgba(15, 196, 178, 0.08) 0%, rgba(15, 196, 178, 0.15) 100%);
         }
         
         .mode-button:nth-child(3):hover::before,
@@ -155,8 +155,8 @@
         
         .mode-button:nth-child(3):hover,
         .mode-button:nth-child(3).active {
-            border-color: #FF6C95;
-            box-shadow: 0 10px 30px rgba(255, 108, 149, 0.25);
+            border-color: #0FC4B2;
+            box-shadow: 0 10px 30px rgba(15, 196, 178, 0.25);
             transform: translateY(-5px);
         }
         
@@ -207,8 +207,8 @@
         }
         
         #revampForm {
-            background: linear-gradient(135deg, #fff5f8 0%, #ffffff 100%);
-            border-color: #FF6C95;
+            background: linear-gradient(135deg, #f0fffd 0%, #ffffff 100%);
+            border-color: #0FC4B2;
         }
         
         .form-section.active {
@@ -266,9 +266,23 @@
         input[type="text"]:focus,
         textarea:focus {
             outline: none;
-            border-color: #5A52FF;
-            box-shadow: 0 0 0 4px rgba(90, 82, 255, 0.1);
+            box-shadow: none;
             transform: translateY(-1px);
+        }
+        
+        #briefForm input[type="text"]:focus,
+        #briefForm textarea:focus {
+            border-color: #5A52FF;
+        }
+        
+        #checklistForm input[type="text"]:focus,
+        #checklistForm textarea:focus {
+            border-color: #FFB81D;
+        }
+        
+        #revampForm input[type="text"]:focus,
+        #revampForm textarea:focus {
+            border-color: #0FC4B2;
         }
         
         textarea {
@@ -310,13 +324,13 @@
         }
         
         #revampForm .submit-btn {
-            background: linear-gradient(135deg, #FF6C95 0%, #ff7fa5 100%);
-            box-shadow: 0 4px 15px rgba(255, 108, 149, 0.3);
+            background: linear-gradient(135deg, #0FC4B2 0%, #3dd4c4 100%);
+            box-shadow: 0 4px 15px rgba(15, 196, 178, 0.3);
         }
         
         #revampForm .submit-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 25px rgba(255, 108, 149, 0.4);
+            box-shadow: 0 6px 25px rgba(15, 196, 178, 0.4);
         }
         
         .submit-btn:active {
